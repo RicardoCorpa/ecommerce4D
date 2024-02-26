@@ -40,7 +40,7 @@ Paulo Henrique Tenório
 
 ### Exemplo e-commerce:
 
-![ModelagemConceitual](https://github.com/RicardoCorpa/ecommerce4D/blob/main/Base_quadrinhos_ecommerce.png)
+![BaseEcommerce](https://github.com/RicardoCorpa/ecommerce4D/blob/main/Base_quadrinhos_ecommerce.png)
 
 ## --------------------------------------------------//--------------------------------------------------
 
