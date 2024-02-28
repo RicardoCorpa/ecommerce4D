@@ -51,7 +51,7 @@ Paulo Henrique Tenório
 
 ### Modelagem conceitual:
 
-![ModelagemConceitual]()
+![ModelagemConceitual](https://github.com/RicardoCorpa/ecommerce4D/blob/main/diagrama_modelagem_conceitual.png)
 
 ## ----------------------------------------//----------------------------------------
 
