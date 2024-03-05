@@ -72,4 +72,6 @@ Paulo Henrique Tenório
 
 #
 
+## NOTION: https://ecoomerce4dhq.notion.site/Ecoomerce-4D-HQ-c3d4a7b1de2f40558bf41695e34ece04
+
 ## Professor: Leonildo
