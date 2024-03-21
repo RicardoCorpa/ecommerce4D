@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listar</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        color: black;
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      button {
+        background-color: #ff3333;
+        border: none;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lista de Funcionários</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>CPF</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="funcionario : ${funcionarios}">
+          <td th:text="${funcionario.username}"></td>
+          <td th:text="${funcionario.email}"></td>
+          <td th:text="${funcionario.cpf}"></td>
+          <td th:text="${funcionario.status}"></td>
+          <td>
+            <button
+              th:attr="onclick='alterarStatus(\'' + ${funcionario.id} + '\', \'' + ${funcionario.status} + '\')'"
+            >
+              Alterar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script></script>
+  </body>
+</html>

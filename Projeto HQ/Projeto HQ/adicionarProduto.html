@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Controle de Estoque</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .navbar {
+        background-color: #ff3333;
+      }
+
+      .navbar-toggler {
+        border: none;
+      }
+
+      .nav-link {
+        color: black;
+        border-radius: 15px;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .card {
+        margin-top: 5%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: white;
+        padding: 20px;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .form-group {
+        margin-bottom: 2%;
+      }
+
+      .form-input {
+        width: 100%;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      .btn {
+        background-color: #ff3333;
+        border: none;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: black;
+      }
+
+      #footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .btn-success {
+        border-radius: 10px;
+      }
+
+      .col-md-6 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div
+          class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+          id="main_nav"
+        >
+          <div class="flex-fill">
+            <ul
+              class="nav navbar-nav d-flex justify-content-between mx-lg-auto"
+            >
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Página do Administrador</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Sair</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid bg-light py-5">
+      <div class="col-md-6 m-auto">
+        <h1 class="title">Controle de Estoque</h1>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 m-auto">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="title">Adicionar HQ's</h2>
+                <br />
+                <form method="post" enctype="multipart/form-data">
+                  <input type="hidden" name="id" />
+                  <br />
+                  <div class="form-group">
+                    <label for="name"><strong>Nome do HQ</strong></label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      required
+                      name="name"
+                      id="name"
+                      placeholder="Digite o nome"
+                    />
+                  </div>
+                  <br />
+                  <div class="form-group">
+                    <label for="category"
+                      ><strong>Categoria do HQ</strong></label
+                    >
+                    <select
+                      class="form-input"
+                      id="category"
+                      name="category"
+                    ></select>
+                  </div>
+                  <br />
+                  <div class="form-group">
+                    <label for="price"><strong>Preço</strong></label>
+                    <input
+                      type="number"
+                      class="form-input"
+                      required
+                      name="price"
+                      id="price"
+                      placeholder="Preço"
+                    />
+                  </div>
+                  <br />
+                  <div class="form-group">
+                    <label for="rating"><strong>Avaliação</strong></label>
+                    <input
+                      type="number"
+                      class="form-input"
+                      required
+                      name="rating"
+                      id="rating"
+                      placeholder="Avaliação"
+                      min="1"
+                      max="5"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="description"><strong>Descrição</strong></label>
+                    <textarea
+                      class="form-input"
+                      rows="4"
+                      required
+                      name="description"
+                      id="description"
+                    ></textarea>
+                  </div>
+                  <br />
+
+                  <div class="custom-file"></div>
+                  <br />
+                  <button type="submit" class="btn btn-success">Salvar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>&copy; 2024 Avengers HQ</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
