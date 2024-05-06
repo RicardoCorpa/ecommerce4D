@@ -64,13 +64,15 @@ Paulo Henrique Tenório
 
 ## Paleta de cores
 
-#
+# #ccc
 
-#
+# #ff5500
+ 
+# #000000
 
-#
+# #white
 
-#
+# #f7bf7f
 
 ## NOTION: https://ecoomerce4dhq.notion.site/Ecoomerce-4D-HQ-c3d4a7b1de2f40558bf41695e34ece04
 
