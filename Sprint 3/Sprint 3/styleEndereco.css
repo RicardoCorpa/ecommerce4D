@@ -1,0 +1,45 @@
+.adicionar-endereco {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.adicionar-endereco h2 {
+    margin-bottom: 20px;
+}
+
+.adicionar-endereco input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px; /* Adicionando margem à direita para separação */
+}
+
+.adicionar-endereco input {
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.adicionar-endereco button {
+    width: calc(50% - 5px);
+    padding: 10px;
+    background-color: #ff6d00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adicionar-endereco button:hover {
+    background-color: #ff9000;
+}
+
+.endereco-checkbox {
+    align-items: left;
+}

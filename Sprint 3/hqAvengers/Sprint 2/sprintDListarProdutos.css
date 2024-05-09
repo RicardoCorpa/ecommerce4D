@@ -1,0 +1,172 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Cor de fundo clara */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura total da janela */
+}
+
+.container {
+  max-width: 800px; /* Largura máxima da tela */
+  padding: 20px; /* Preenchimento interno */
+  background-color: white; /* Cor de fundo branca */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para realçar */
+}
+
+h2 {
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.add-product-container {
+  text-align: right; /* Alinha o botão à direita */
+  margin-bottom: 20px; /* Espaçamento abaixo do botão */
+}
+
+.add-product-button {
+  padding: 10px 20px; /* Preenchimento do botão */
+  background-color: #000000; /* Cor de fundo verde */
+  color: white; /* Cor do texto branca */
+  border: none; /* Remove a borda do botão */
+  border-radius: 8%; /* Botão quadrado */
+  font-size: 18px; /* Aumenta o tamanho da fonte para o botão */
+  line-height: 1; /* Mantém o botão compacto */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.add-product-button:hover {
+  background-color: #000000; /* Cor mais escura ao passar o mouse */
+}
+
+.search-container {
+  display: flex; /* Usa flexbox para alinhar o campo de busca e o botão */
+  justify-content: flex-start; /* Alinha à esquerda */
+  align-items: center; /* Alinha verticalmente */
+  margin-bottom: 20px; /* Espaçamento abaixo do campo de busca */
+}
+
+label {
+  margin-right: 10px; /* Espaçamento à direita do rótulo */
+  /* font-weight: bold; /* Destaca o texto do rótulo */
+}
+
+input {
+  padding: 8px; /* Preenchimento interno */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 4px; /* Bordas arredondadas */
+  margin-right: 10px; /* Espaçamento à direita do campo */
+}
+
+button {
+  padding: 8px 12px; /* Preenchimento interno */
+  border: none; /* Remove a borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  background-color: #000000; /* Cor de fundo verde */
+  color: white; /* Cor do texto branca */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+}
+
+button:hover {
+  background-color: #ff5500; /* Cor mais escura ao passar o mouse */
+}
+
+table {
+  width: 100%; /* Largura total da tabela */
+  border-collapse: collapse; /* Remove espaçamento entre células */
+  margin-bottom: 20px; /* Espaçamento abaixo da tabela */
+}
+
+th,
+td {
+  padding: 10px; /* Preenchimento interno */
+  text-align: left; /* Alinha o texto à esquerda */
+  border-bottom: 1px solid #ff5500; /* Borda inferior clara */
+}
+
+th {
+  background-color: #000000; /* Cor de fundo dos cabeçalhos */
+  color: white;
+}
+
+#pagination {
+  text-align: center; /* Centraliza a barra de paginação */
+  margin-top: 20px; /* Espaçamento acima da paginação */
+}
+
+.error-message {
+  color: red; /* Cor vermelha para a mensagem de erro */
+  margin-top: 10px; /* Espaçamento acima da mensagem de erro */
+  text-align: center; /* Centraliza a mensagem de erro */
+}
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px; /* Largura máxima para uma tela mais compacta */
+  padding: 20px; /* Preenchimento interno */
+  background-color: white; /* Cor de fundo branca */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para realçar */
+  text-align: center; /* Centraliza todo o texto dentro do container */
+}
+
+h2 {
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Espaçamento entre grupos de formulário */
+  text-align: left; /* Alinha os campos à esquerda */
+  margin-left: auto; /* Centraliza horizontalmente os campos */
+  margin-right: auto; /* Centraliza horizontalmente os campos */
+}
+
+label {
+  display: block; /* Cada rótulo ocupa uma linha */
+  margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+  font-weight: bold; /* Destaca o texto do rótulo */
+}
+
+input {
+  padding: 10px; /* Preenchimento interno dos campos */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 4px; /* Bordas arredondadas */
+  width: 100%; /* Largura total dos campos */
+  box-sizing: border-box; /* Inclui padding na largura */
+}
+
+.button-group {
+  display: flex; /* Usa flexbox para alinhar os botões */
+  justify-content: center; /* Centraliza os botões */
+  gap: 10px; /* Espaçamento entre os botões */
+  margin-top: 20px; /* Espaçamento acima dos botões */
+}
+
+button {
+  padding: 10px 20px; /* Preenchimento interno dos botões */
+  border: none; /* Remove a borda dos botões */
+  border-radius: 4px; /* Bordas arredondadas dos botões */
+  background-color: #000000; /* Cor de fundo verde */
+  color: white; /* Cor do texto branca */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre os botões */
+}
+
+button:hover {
+  background-color: #ff5500; /* Cor de fundo mais escura ao passar o mouse */
+}

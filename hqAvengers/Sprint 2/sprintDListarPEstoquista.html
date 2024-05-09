@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar produtos estoquista</title>
+    <link rel="stylesheet" href="sprintDListarProdutos.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Lista de produtos estoquista</h2>
+
+        <div class="add-product-container">
+        <a href="sprintDCadastrarProdutos.html" class="add-product-button">+</a></div>
+
+        <div class="search-container">
+            <label for="search-term">Buscar produto:</label>
+            <input type="text" id="search-term" name="search-term" placeholder="Buscar produto..." required>
+            <button type="button" onclick="searchProducts()">Procurar</button>
+        </form>
+    </div>
+
+       
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+               
+            </tbody>
+        </table>
+
+        
+        <div id="pagination">
+            <!-- Elementos de paginação serão preenchidos dinamicamente -->
+        </div>
+
+        <script src="sprintDListarPEstoquista.js"></script>
+    </div>
+</body>
+
+</html>

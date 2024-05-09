@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alterar quantidade de produto</title>
+    <link rel="stylesheet" href="sprintDListarProdutos.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Alterar quantidade de produtos</h2>
+
+      <form id="product-form" onsubmit="updateStock(event)">
+        <div class="form-group">
+          <label for="product-name">Nome:</label>
+          <input type="text" id="product-name" name="product-name" disabled />
+        </div>
+        <div class="form-group">
+          <label for="product-stock">Quantidade:</label>
+          <input
+            type="number"
+            id="product-stock"
+            name="product-stock"
+            min="0"
+            required
+          />
+        </div>
+        <div class="button-group">
+          <button type="submit">Salvar</button>
+          <button type="button" onclick="cancel()">Cancelar</button>
+        </div>
+      </form>
+
+      <script src="sprintDListarPEstoquista.js"></script>
+    </div>
+  </body>
+</html>

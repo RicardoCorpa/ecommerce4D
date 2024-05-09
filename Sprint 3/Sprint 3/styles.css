@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #5b5858;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons img {
+  width: 30px;
+  margin-right: 30px;
+}
+
+.icons .login {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background-color: black;
+  border: 2px solid red;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.icons .login:hover {
+  background-color: red;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-card h2 {
+  margin-top: 0;
+}
+
+.product-card .btn {
+  display: inline-block;
+  background-color: #5b5858;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  align-items: baseline;
+}
+
+.product-card .description {
+  color: black;
+}
+
+.product-card .price {
+  color: red;
+}
+
+footer {
+  background-color: #5b5858;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.product-card {
+  
+  align-items: center;
+}
+
+.list_cards  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  max-width: 1400px;
+  
+}
+
+.price {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 80%;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.login {
+  cursor: crosshair;
+}

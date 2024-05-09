@@ -1,0 +1,63 @@
+/* Estilizando a seção de endereços */
+.enderecos {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando o título */
+.enderecos h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilizando cada bloco de endereço */
+.endereco {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilizando o botão de exclusão */
+.excluir-endereco {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Mudando a cor do botão de exclusão quando está em hover */
+.excluir-endereco:hover {
+    background-color: #c9302c;
+}
+
+/* Estilizando o botão de logout */
+#logout {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #d88211;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Mudando a cor do botão de logout quando está em hover */
+#logout:hover {
+    background-color: #d76c15;
+}
+
+/* Escondendo endereços excluídos */
+.endereco.excluido {
+    display: none;
+}

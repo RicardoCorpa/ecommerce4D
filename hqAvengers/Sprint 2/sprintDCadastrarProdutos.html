@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar produtos</title>
+    <link rel="stylesheet" href="sprintDListarProdutos.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cadastrar produtos</h2>
+
+        <form id="product-form" onsubmit="saveProduct(event)">
+            <div class="form-group">
+                <label for="product-name">Nome:</label>
+                <input type="text" id="product-name" name="product-name" maxlength="200" required>
+            </div>
+            <div class="form-group">
+                <label for="product-rating">Avaliação:</label>
+                <input type="number" id="product-rating" name="product-rating" min="0.5" max="5" step="0.5" required>
+            </div>
+            <div class="form-group">
+                <label for="product-description">Descrição detalhada:</label>
+                <textarea id="product-description" name="product-description" maxlength="2000" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="product-price">Valor:</label>
+                <input type="number" id="product-price" name="product-price" step="0.01" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="product-stock">Quantidade em estoque:</label>
+                <input type="number" id="product-stock" name="product-stock" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="product-images">Imagem:</label>
+                <input type="file" id="product-images" name="product-images" multiple accept="image/*" required>
+                <br></br>
+                <label for="main-image">Imagem principal:</label>
+                <input type="number" id="main-image" name="main-image" min="1" max="10" required>
+            </div>
+            <div class="form-group">
+                <label for="product-group">Grupo:</label>
+                <select id="product-group" name="product-group" required>
+                    <option value="categoria1">Categoria 1</option>
+                    <option value="categoria2">Categoria 2</option>
+                </select>
+            </div>
+            <div class="button-group">
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="cancel()">Cancelar</button>
+            </div>
+        </form>
+
+        <script src="sprintDCadastrarProdutos.js"></script>
+    </div>
+</body>
+
+</html>

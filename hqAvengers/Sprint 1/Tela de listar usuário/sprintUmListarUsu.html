@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de usuários</title>
+    <link rel="stylesheet" href="sprintUmListarUsu.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Lista de usuário</h2>
+      <div class="add-user-container">
+        <a href="cadastrar_usuario.html" class="add-user-button">+</a>
+      </div>
+
+      <!-- Filtro com formulário -->
+      <form class="filter-form" onsubmit="filterUsers(event)">
+        <div class="filter">
+          <input
+            type="text"
+            id="filter-name"
+            name="filter-name"
+            placeholder="Digite aqui"
+            oninput="filterUsers()"
+            required
+          />
+          <button type="submit" class="filter-button">Procurar</button>
+        </div>
+      </form>
+
+      <!-- Lista de Usuários -->
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Status</th>
+            <th>Alterar</th>
+            <th>Hab/Des</th>
+          </tr>
+        </thead>
+        <tbody id="user-list">
+          <!-- Usuários serão preenchidos dinamicamente -->
+        </tbody>
+      </table>
+
+      <script src="sprintUmListarUsu.js"></script>
+    </div>
+  </body>
+</html>

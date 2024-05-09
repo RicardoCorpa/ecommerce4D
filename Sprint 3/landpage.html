@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes do Produto</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #5b5858;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #5b5858;
+      color: white;
+      width: 100%;
+  }
+
+  .logo {
+      width: 30px;
+      height: auto;
+  }
+
+  .nav-links {
+      display: flex;
+      gap: 10px;
+  }
+
+  .login-link {
+    color: white;
+  text-decoration: none;
+  display: inline-block;
+  background-color: black;
+  border: 2px solid red;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  
+  }
+
+  .login-link:hover {
+  background-color: red;
+  color: white;
+  }
+
+
+
+  .cart-icon {
+      width: 25px;
+      height: auto;
+  }
+
+  .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .carousel {
+      overflow: hidden;
+      width: 200%;
+      max-width: 600px;
+      margin: 10px auto;
+  }
+
+  .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease;
+  }
+
+  .carousel-item {
+      min-width: 100%;
+  }
+
+  .product-images img {
+      max-width: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+  }
+
+  .product-info {
+      margin-bottom: 20px;
+  }
+
+  .product-info h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: black;
+  }
+
+  .product-info p {
+      margin-bottom: 10px;
+  }
+
+  .product-price {
+      color: red;
+      font-weight: bold;
+  }
+
+  .product-rating {
+      display: flex;
+      align-items: center;
+  }
+
+  .product-rating span {
+      margin-right: 5px;
+  }
+
+  .product-rating img {
+      width: 20px;
+  }
+
+  .buy-button {
+      background-color: gray;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  footer {
+      margin-top: 20px;
+      text-align: center;
+  }
+
+  .copyright {
+      color: #5b5858;
+  }
+
+  .login-link {
+  cursor: crosshair;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="escudoCap.png" alt="Logo" class="logo">
+    </div>
+    <nav class="nav-links">
+      <a href="carrinho.html">
+        <img src="carrinho.png" alt="Carrinho de Compras" class="cart-icon">
+      </a>
+      <a href="login.html" class="login-link">Login/Cadastre-se</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="indra70.jpg" alt="Product Image 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="kabuto52.jpg" alt="Product Image 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="kaguya71.jpg" alt="Product Image 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="kakashi46.jpg" alt="Product Image 4" />
+        </div>
+        <div class="carousel-item">
+          <img src="naruto41.jpg" alt="Product Image 5" />
+        </div>
+        <div class="carousel-item">
+          <img src="obito63.jpg" alt="Product Image 6" />
+        </div>
+        <div class="carousel-item">
+          <img src="sasuke40.jpg" alt="Product Image 7" />
+        </div>
+        <div class="carousel-item">
+          <img src="rin68.jpg" alt="Product Image 8" />
+        </div>
+      </div>
+    </div>
+
+    <div class="product-info">
+      <h1>Mangá Naruto Shippuden</h1>
+      <p>
+        "Naruto" é um famoso mangá japonês escrito e ilustrado por Masashi
+        Kishimoto. A história segue as aventuras de Naruto Uzumaki, um jovem
+        ninja com o sonho de se tornar o líder de sua aldeia, conhecido como
+        Hokage, e assim ganhar o respeito e reconhecimento de seus colegas. No
+        entanto, Naruto carrega dentro de si o espírito de uma raposa de nove
+        caudas, uma entidade poderosa que o torna uma figura controversa entre
+        os habitantes de sua vila. Ao longo da narrativa, Naruto enfrenta uma
+        série de desafios e adversários enquanto treina para se tornar um
+        ninja mais habilidoso. Ele é acompanhado por seus amigos e
+        companheiros de equipe, Sasuke Uchiha e Sakura Haruno, formando o
+        "Time 7", liderado pelo sensei Kakashi Hatake. O mangá de "Naruto"
+        aborda temas como amizade, determinação, sacrifício e redenção,
+        enquanto os personagens enfrentam batalhas épicas e desenvolvem laços
+        significativos uns com os outros. A série é conhecida por sua rica
+        mitologia, personagens cativantes e reviravoltas emocionantes,
+        tornando-se uma das obras mais populares do gênero shonen.
+      </p>
+      <p class="product-price">Preço: A partir de R$21,75</p>
+      <div class="product-rating">
+        <span>Avaliação:</span>
+        <img src="estrela.png" alt="Star" />
+        <img src="estrela.png" alt="Star" />
+        <img src="estrela.png" alt="Star" />
+        <img src="estrela.png" alt="Star" />
+        <img src="estrela.png" alt="Star" />
+      </div>
+    </div>
+    <a>
+      <button href="#" class="buy-button" disabled>Comprar</button>
+    </a>
+  </div>
+
+  <script>
+    // Carrossel funcional - Criar uma pasta de JS e CSS
+    let position = 0; // Posição inicial
+
+    function nextSlide() {
+      const carouselInner = document.querySelector(".carousel-inner");
+      const items = document.querySelectorAll(".carousel-item");
+
+      position++;
+      if (position >= items.length) {
+        position = 0;
+      }
+
+      const newPosition = -position * items[0].offsetWidth;
+      carouselInner.style.transform = `translateX(${newPosition}px)`;
+    }
+
+    setInterval(nextSlide, 2000); // Troca o slide
+  </script>
+
+  <footer>
+    <p class="copyright">&copy; 2024 Avengers HQ</p>
+  </footer>
+</body>
+</html>

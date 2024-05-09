@@ -1,0 +1,54 @@
+/* Estilização geral para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilização da seção de cadastro */
+.cadastro {
+    width: 70%;
+    max-width: 500px; /* Limitar a largura máxima */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilização do título */
+.cadastro h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilização dos campos de entrada */
+.cadastro input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilização do botão de cadastro */
+.cadastro button {
+    width: 100%;
+    padding: 12px;
+    background-color: #da7509; /* Cor de fundo verde */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilização do botão de cadastro quando em hover */
+.cadastro button:hover {
+    background-color: #218838; /* Tom mais escuro de verde */
+}

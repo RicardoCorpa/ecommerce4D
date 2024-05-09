@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-user-container {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.add-user-button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-user-button:hover {
+  background-color: #ff5500; /* Cor de fundo laranja padrão para a HQ AVENGERS, cor que o site deve ter para sua identidade */
+}
+
+.filter-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.filter-button {
+  padding: 8px 12px;
+  background-color: #000000;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: #ff5500;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ff5500;
+}
+
+th {
+  background-color: #000000;
+  color: white;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+button.alter {
+  background-color: #f7bf7f; /* Cor translucida para não dar diferença */
+}
+
+button.toggle-status {
+  background-color: #ff5500;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Utilize o padrão de cores das telas, preto, branco, bow shadow, talvez um cinza, #000000
+#ff5500
+#f7bf7f
+*/

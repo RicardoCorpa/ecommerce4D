@@ -1,0 +1,58 @@
+.login, .cadastro {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login h2, .cadastro h2 {
+    margin-bottom: 20px;
+}
+
+.login input, .cadastro input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login button, .cadastro button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6d00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login button:hover, .cadastro button:hover {
+    background-color: #ff9000;
+}
+
+.login p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login p a {
+    color: #ff6d00;
+    text-decoration: none;
+}
+
+.login p a:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    max-width: 40px; 
+    height: auto;
+}
+
+
+
+

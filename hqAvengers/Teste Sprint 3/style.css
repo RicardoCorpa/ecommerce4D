@@ -1,0 +1,110 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da janela */
+}
+
+.container {
+    max-width: 800px; /* Largura máxima da seção */
+    padding: 20px; /* Preenchimento interno */
+    background-color: white; /* Cor de fundo branca */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para realçar */
+    text-align: center; /* Centraliza todo o texto */
+}
+
+header {
+    width: 100%; /* Largura total */
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Espaçamento entre elementos */
+    align-items: center; /* Alinhamento vertical */
+    padding: 10px;
+    background-color: #5b5858; /* Cor de fundo escura */
+    color: white; /* Cor do texto branca */
+}
+
+.logo img {
+    width: 30px; /* Largura da logo */
+}
+
+.nav-links a {
+    color: white; /* Cor do texto branca */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cart-icon {
+    width: 25px;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%; /* Largura total */
+    max-width: 600px;
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona margem */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease; /* Transição suave */
+}
+
+.carousel-item {
+    min-width: 100%; /* Largura de 100% para cada item */
+}
+
+.product-image {
+    width: 200px; /* Largura padrão das imagens */
+    height: 200px; /* Altura padrão das imagens */
+    object-fit: cover; /* Ajusta as imagens para caber nas dimensões */
+    margin-right: 10px; /* Espaçamento entre as imagens */
+}
+
+.product-info {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 20px; /* Espaçamento abaixo dos detalhes do produto */
+}
+
+.product-info h1 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.product-price {
+    color: red; /* Cor vermelha para o preço */
+}
+
+.product-rating span {
+    margin-right: 5px; /* Espaçamento entre a avaliação e as estrelas */
+}
+
+.product-rating img {
+    width: 20px; /* Largura das estrelas de avaliação */
+}
+
+.buy-button {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed; /* Indica que o botão está desabilitado */
+}
+
+footer {
+    margin-top: 20px; /* Espaçamento acima do rodapé */
+    text-align: center; /* Centraliza o texto do rodapé */
+}
+
+.copyright {
+    color: #5b5858; /* Cor do texto */
+}
